@@ -1,0 +1,371 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-family: "New Rocker", system-ui;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .goblincore .catalog,
+.coquette .catalog,
+.downtown .catalog,
+.goth .catalog,
+.y2k .catalog {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+main .ct-div {
+  width: 250px;
+  height: 400px;
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 15px 10px;
+}
+@media (max-width: 768px) {
+  main .ct-div {
+    width: 200px;
+    height: 320px;
+  }
+}
+@media (max-width: 375px) {
+  main .ct-div {
+    width: 250px;
+    height: 300px;
+  }
+}
+
+main .ct-div:hover {
+  transform: scale(1.05);
+}
+
+main .ct-div{
+  transition: 0.3s;
+}
+
+main .goblincore .ct-div {
+  border-color: #618d5d;
+}
+main .goblincore .ct-div .ct-b {
+  background-color: #def3de;
+  border-color: #618d5d;
+  color: #618d5d;
+}
+main .goblincore .ct-div .ct-b:hover {
+  background-color: #618d5d;
+  border-color: #def3de;
+  color: #def3de;
+}
+main .goblincore .ct-div .ct-h2 {
+  color: #33582f;
+}
+main .goblincore .ct-div .ct-p {
+  color: #33582f;
+}
+
+main .coquette .ct-div {
+  border-color: #cc8787;
+}
+main .coquette .ct-div .ct-b {
+  background-color: #f3deea;
+  border-color: #cc8787;
+  color: #cc8787;
+}
+main .coquette .ct-div .ct-b:hover {
+  background-color: #cc8787;
+  border-color: #f3deea;
+  color: #f3deea;
+}
+main .coquette .ct-div .ct-h2 {
+  color: #6e3d5e;
+}
+main .coquette .ct-div .ct-p {
+  color: #6e3d5e;
+}
+
+main .downtown .ct-div {
+  border-color: #5a5a5a;
+}
+main .downtown .ct-div .ct-b {
+  background-color: #f7f7f7;
+  border-color: #5a5a5a;
+  color: #5a5a5a;
+}
+main .downtown .ct-div .ct-b:hover {
+  background-color: #5a5a5a;
+  border-color: #f7f7f7;
+  color: #f7f7f7;
+}
+main .downtown .ct-div .ct-h2 {
+  color: #3a3a3a;
+}
+main .downtown .ct-div .ct-p {
+  color: #3a3a3a;
+}
+
+main .goth .ct-div .ct-b {
+  background-color: #d1d1d1;
+  border-color: #000000;
+  color: #000000;
+}
+main .goth .ct-div .ct-b:hover {
+  background-color: #000000;
+  border-color: #d1d1d1;
+  color: #d1d1d1;
+}
+
+main .y2k .ct-div {
+  border-color: #705b46;
+}
+main .y2k .ct-div .ct-b {
+  background-color: #e9ddd2;
+  border-color: #705b46;
+  color: #705b46;
+}
+main .y2k .ct-div .ct-b:hover {
+  background-color: #705b46;
+  border-color: #e9ddd2;
+  color: #e9ddd2;
+}
+main .y2k .ct-div .ct-h2 {
+  color: #534434;
+}
+main .y2k .ct-div .ct-p {
+  color: #534434;
+}
+
+main .ct-img {
+  margin-bottom: 20px;
+  width: 230px;
+  height: 230px;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  main .ct-img {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 375px) {
+  main .ct-img {
+    width: 150px;
+    height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+
+main .ct-h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  main .ct-h2 {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 375px) {
+  main .ct-h2 {
+    margin-bottom: 20px;
+  }
+}
+
+main .ct-s {
+  display: inline;
+}
+@media (max-width: 768px) {
+  main .ct-s {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  main .ct-s {
+    display: inline;
+  }
+}
+
+main .ct-p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  main .ct-p {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 375px) {
+  main .ct-p {
+    margin-bottom: 10px;
+  }
+}
+
+main .ct-b {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 230px;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  main .ct-b {
+    width: 180px;
+    padding: 5px;
+  }
+}
+@media (max-width: 375px) {
+  main .ct-b {
+    width: 230px;
+    padding: 5px;
+  }
+}
+
+main .back,
+.back2,
+.back3,
+.back4,
+.back5 {
+  height: 400px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 375px) {
+  main .back,
+  .back2,
+  .back3,
+  .back4,
+  .back5 {
+    height: 300px;
+  }
+}
+
+main .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .g-h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+main .g-a {
+  display: flex;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 6px 10px;
+  background-color: white;
+  justify-content: center;
+  width: 150px;
+}
+
+main .back {
+  background-image: url(/images/goblincore.jpg);
+  background-size: cover;
+}
+main .back .g-h1 {
+  color: #0f270f;
+}
+main .back .g-a {
+  color: #335533;
+}
+main .back .g-a:hover {
+  color: #fff;
+  background-color: #335533;
+}
+
+main .back2 {
+  background-image: url(/images/coquette.jpg);
+  background-size: cover;
+}
+main .back2 .g-h1 {
+  color: #da7878;
+}
+main .back2 .g-a {
+  color: #cc8787;
+}
+main .back2 .g-a:hover {
+  color: #fff;
+  background-color: #cc8787;
+}
+
+main .back3 {
+  background-image: url(/images/downtown.jpg);
+  background-size: cover;
+}
+main .back3 .g-h1 {
+  color: #ffffff;
+}
+main .back3 .g-a {
+  color: #363636;
+}
+main .back3 .g-a:hover {
+  color: #fff;
+  background-color: #363636;
+}
+@media (max-width: 768px) {
+  main .back3 {
+    background-position: right;
+  }
+}
+@media (max-width: 375px) {
+  main .back3 {
+    background-position: center;
+  }
+}
+
+main .back4 {
+  background-image: url(/images/goths.jpg);
+  background-size: cover;
+}
+main .back4 .g-h1 {
+  color: white;
+}
+main .back4 .g-a {
+  color: black;
+}
+main .back4 .g-a:hover {
+  color: #fff;
+  background-color: #000000;
+}
+@media (max-width: 768px) {
+  main .back4 {
+    background-position: right;
+  }
+}
+
+main .back5 {
+  background-image: url(/images/y2k.jpg);
+  background-size: cover;
+}
+main .back5 .g-h1 {
+  color: #ffffff;
+}
+main .back5 .g-a {
+  color: #221f1b;
+}
+main .back5 .g-a:hover {
+  color: #fff;
+  background-color: #221f1b;
+}/*# sourceMappingURL=styles.css.map */

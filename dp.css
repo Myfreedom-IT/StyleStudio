@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "New Rocker", system-ui;
+}
+
+header {
+    padding-top: 10px;
+    background-color: #ffffffe5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header .container {
+    max-width: 95%;
+    margin: auto;
+}
+
+header button {
+    border: none;
+    cursor: pointer;
+}
+
+header nav .a-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .a-text {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+
+header .flex-nav {
+    display: flex;
+    gap: 20px;
+}
+
+header button {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+header .logo{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.showcase button {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.second-header {
+    display: none;
+}
+
+.showcase .search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+}
+
+.showcase .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+.showcase .search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.styles .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+
+}
+
+.showcase .styles {
+    border-bottom: 2px solid #000000;
+    padding: 10px;
+
+ 
+}
+
+
+.showcase .add-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 10px;
+}
+
+.showcase .additionally a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+}
+.showcase .additionally {
+    padding: 10px;
+}
+
+.showcase {
+    background-color: #fff;
+    position: absolute;
+    display: none;
+    top: 76px;
+}
+
+.showcase .menu {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.showcase .style.active {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.showcase button {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+
+.showcase .tab {
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.showcase .tab.active {
+    color: #cfb997;
+    font-weight: bold;
+}
+
+.showcase .style {
+    display: none;
+}
+
+.showcase .style a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+
+@media(max-width: 800px) {
+
+    header .header-img {
+        width: 30px;
+    }
+
+    .first-header .a-text {
+        font-size: 16px;
+    }
+
+    .showcase .menu {
+        min-width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .showcase .search-input {
+        font-size: 20px;
+    }
+
+    .showcase .search-container {
+        border: 1px solid #ccc;
+        min-width: 300px;
+    }
+
+    .showcase .tabs-content .style a {
+        font-size: 16px;
+    }
+
+    .showcase .styles button {
+        font-size: 15px;
+    }
+
+    .showcase .additionally a {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 1920px) {
+    .showcase .menu {
+        min-width: 400px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .showcase .search-input {
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background-color: #ffffff;
+    }
+
+    .showcase .search-container {
+        border: 2px solid #ccc;
+        min-width: 400px;
+    }
+
+    .showcase .style a {
+        font-size: 28px;
+    }
+
+    .showcase .tabs button {
+        font-size: 18px;
+    }
+
+    .showcase .additionally a {
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 600px) {
+    .first-header {
+        display: none;
+    }
+
+    header button {
+        background-color: #ffffff;
+    }
+
+    .showcase button {
+        background-color: #ffffff;
+    }
+
+    .second-header {
+        display: block;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .showcase .menu {
+        min-width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .showcase .search-input {
+        font-size: 20px;
+        background-color: #ffffff;
+    }
+
+    .showcase .search-container {
+        border: 1px solid #ccc;
+        min-width: 300px;
+    }
+
+    .showcase .style a {
+        font-size: 14px;
+    }
+
+    .showcase .styles button {
+        font-size: 14px;
+    }
+
+    .showcase .additionally a {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 425px) {
+    .showcase .menu {
+        min-width: 1vh;
+    }
+
+    .showcase .search-container {
+        min-width: 425px;
+    }
+
+    .showcase .tabs {
+        justify-content: center;
+    }
+
+    .showcase .tabs-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .showcase .tabs-content a {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .showcase .additionally {
+        justify-content: center;
+        display: flex;
+    }
+
+    .showcase .additionally a {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 890px ) {
+    header .header-img{
+        width: 30px;
+
+    }
+
+    .first-header{
+        display: none;
+    }
+    .second-header{
+        display: block;
+    }
+}

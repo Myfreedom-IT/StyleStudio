@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer {
+    padding-top: 91px;
+    padding-bottom: 65px;
+}
+
+footer .container {
+    max-width: 95%;
+    margin: auto;
+}
+
+footer .footer-top {
+    padding-bottom: 30px;
+}
+
+footer .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+footer .about {
+    width: 40%;
+}
+
+footer .about p{
+    color: black;
+
+}
+
+footer .connection {
+    width: 20%;
+}
+
+footer .information {
+    width: 25%;
+}
+
+footer .footer-bottom {
+    background-color: black;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+footer .footer-bottom .footer-wrapper {
+    align-items: center;
+}
+
+footer .description p {
+    color: #fff;
+
+}
+
+footer ul {
+    list-style-type: none;
+
+}
+
+footer ul li {
+    margin-top: 7px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .description {
+    width: 50%;
+
+}
+
+footer .cards img {
+    max-height: 30px;
+    max-width: 100%;
+}
+
+footer .cards {
+    display: flex;
+    gap: 25px;
+
+}
+
+@media(max-width: 700px) {
+    footer .description {
+        width: 100%;
+    }
+
+    footer .about {
+        width: 100%;
+    }
+
+    footer .connection {
+        width: 49%;
+    }
+
+    footer .information {
+        width: 49%;
+    }
+
+    footer .cards {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+}
