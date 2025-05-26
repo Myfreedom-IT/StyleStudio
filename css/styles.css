@@ -356,7 +356,7 @@ main .back4 .g-a:hover {
 }
 
 main .back5 {
-  background-image: url(/images/y2k.jpg);
+  background-image: url(../images/y2k.jpg);
   background-size: cover;
 }
 main .back5 .g-h1 {
