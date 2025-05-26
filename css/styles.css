@@ -281,7 +281,7 @@ main .g-a {
 }
 
 main .back {
-  background-image: url(/images/goblincore.jpg);
+  background-image: url(../images/goblincore.jpg);
   background-size: cover;
 }
 main .back .g-h1 {
@@ -296,7 +296,7 @@ main .back .g-a:hover {
 }
 
 main .back2 {
-  background-image: url(/images/coquette.jpg);
+  background-image: url(../images/coquette.jpg);
   background-size: cover;
 }
 main .back2 .g-h1 {
@@ -311,7 +311,7 @@ main .back2 .g-a:hover {
 }
 
 main .back3 {
-  background-image: url(/images/downtown.jpg);
+  background-image: url(../images/downtown.jpg);
   background-size: cover;
 }
 main .back3 .g-h1 {
@@ -336,7 +336,7 @@ main .back3 .g-a:hover {
 }
 
 main .back4 {
-  background-image: url(/images/goths.jpg);
+  background-image: url(../images/goths.jpg);
   background-size: cover;
 }
 main .back4 .g-h1 {
