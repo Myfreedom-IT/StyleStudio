@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="dp.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="stylesheet" href="account.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Rocker&display=swap"
@@ -23,109 +24,146 @@
                 <nav class="flex-nav">
                     <div>
                         <button class="a-flex a-text mob-menu">
-                            <img src="./images/menu.svg" alt="menu" width="50px" class="header-img">
+                            <img src="./images/menu.svg" alt="menu" width="35px" class="header-img">
                             Catalog
                         </button>
                     </div>
                     <div>
-                        <a href="#" class="a-flex a-text">
-                            <img src="./images/location.svg" alt="GPS" width="50px" class="header-img">
+                        <a href="#" class="a-flex a-text popup-btn-minsk activate" id="popup-btn-minsk">
+                            <img src="./images/location.svg" alt="GPS" width="35px" class="header-img">
+                            Stores
+                        </a>
+                        <a href="#" class="a-flex a-text popup-btn-grodno" id="popup-btn-grodno">
+                            <img src="./images/location.svg" alt="GPS" width="35px" class="header-img">
+                            Stores
+                        </a>
+                        <a href="#" class="a-flex a-text popup-btn-brest" id="popup-btn-brest">
+                            <img src="./images/location.svg" alt="GPS" width="35px" class="header-img">
                             Stores
                         </a>
                     </div>
-                    <div>
-                        <a href="#" class="a-flex a-text">
-                            <img src="./images/gps.svg" alt="navigation" width="50px" class="header-img">
-                            Minsk
+                    <div  class="city-wrapper">
+                        <a href="#" class="a-flex a-text city-trigger" >
+                            <img src="./images/gps.svg" alt="navigation" width="35px" class="header-img">
+                         
                         </a>
+                        <button class="mainButton" id="mainButton"> Minsk</button>
+                        <div class="container">              
+                        <div class="menu" id="menu">
+                            <button onclick="changeText(1)">Minsk</button>
+                            <button onclick="changeText(2)">Grodno</button>
+                            <button onclick="changeText(3)">Brest</button>
+                        </div>
+                    </div>
                     </div>
                 </nav>
             </div>
+            <div class="side-menu" id="sideMenu">
+                <div class="side-menu-header">
+                    <button id="closeMenu">X</button>
+                </div>
+                <div class="menu-side">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Введите текст для поиска...">
+                    <button class="search-button"><img src="./images/search.svg" alt="search" width="30px"></button>
+                </div>
+                <div class="styles">
+                    <div class="tabs">
+                        <button class="tab active" data-category="Y2K">Y2K</button>
+                        <button class="tab" data-category="downtown">downtown</button>
+                        <button class="tab" data-category="goth">goth</button>
+                        <button class="tab" data-category="coquette">coquette</button>
+                        <button class="tab" data-category="goblincore">goblincore</button>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="style hidden active" id="Y2K">
+                            <a href="#">Longsleeve</a>
+                            <a href="#">Flared jeans</a>
+                            <a href="#">Mini skirts</a>
+                            <a href="#">Sneakers "Converse"</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                        <div class="style hidden" id="downtown">
+                            <a href="#">Sneakers "Vans"</a>
+                            <a href="#">Tennis skirts</a>
+                            <a href="#">Sweatshirts</a>
+                            <a href="#">Skinny jeans</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                        <div class="style hidden" id="goth">
+                            <a href="#">Crop tops</a>
+                            <a href="#">Wide leg Jeans</a>
+                            <a href="#">Skirts</a>
+                            <a href="#">New Rock</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                        <div class="style hidden" id="coquette">
+                            <a href="#">Flared jeans</a>
+                            <a href="#">Loafers</a>
+                            <a href="#">Longsleeve</a>
+                            <a href="#">Mini skirts</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                        <div class="style hidden" id="goblincore">
+                            <a href="#">Mini skirts</a>
+                            <a href="#">Jeans</a>
+                            <a href="#">Sneakers "Converse"</a>
+                            <a href="#">Longsleeve</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="additionally">
+                    <div class="add-wrapper">
+                        <a href="#">Certificates</a>
+                        <a href="#">Sales</a>
+                        <a href="#">Delivery</a>
+                        <a href="#">Return</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-overlay" id="menuOverlay"></div>
             <div class="logo">
-                <img src="./images/logo.png" alt="logo" width="75px">
+                <img src="./images/logo.png" alt="logo" width="50px">
             </div>
             <div>
                 <nav class="flex-nav">
-                    <a href="#"><img src="./images/user.svg" alt="account" width="50px" class="header-img"></a>
-                    <a href="#"><img src="./images/favorites.svg" alt="favorites" width="50px" class="header-img"></a>
-                    <a href="#"><img src="./images/bag.svg" alt="bag" width="50px" class="header-img"></a>
+                    <a href="/account.html"><img src="./images/user.svg" alt="account" width="35px" class="header-img"></a>
+                    <a href="#"><img src="./images/favorites.svg" alt="favorites" width="35px" class="header-img"></a>
+                    <a href="#"><img src="./images/bag.svg" alt="bag" width="35px" class="header-img"></a>
                 </nav>
             </div>
         </div>
+        </div>
+        <div class="popup-minsk">
+            <button class="popup-close">X</button>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0055e8c04bc4ecc9b5935e07cc0a6142a6bb7f4f23e2db019b8cbc42ad215d4a&amp;width=799&amp;height=508&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="popup-grodno">
+            <button class="popup-close">X</button>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adf06f3ea70d705cb603c6c6f3cd5420aaeb3c9b97b1117fc2ca84d11ec209cc0&amp;width=913&amp;height=545&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="popup-brest">
+            <button class="popup-close">X</button>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aebba4820aceb1de2bde1d402c08b262fc94c5a58395ad8e2962ee5ffdaf0e1cd&amp;width=824&amp;height=575&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
     </header>
     <header class="second-header">
         <div class="container flex">
-            <button class="mob-menu">
+            <div class="side-menu" id="sideMenu">
+                <div class="side-menu-header">
+                    <button id="closeMenu">X</button>
+                </div>
+            </div>
+            <button class="mob-menu" id="mob-menus">
                 <img src="./images/menu.svg" alt="" class="header-img">
             </button>
             <img src="./images/logo.png" alt="" class="header-img">
             <a href="#"><img src="./images/user.svg" alt="user" class="header-img"></a>
+            <div class="menu-overlay" id="menuOverlay"></div>
         </div>
     </header>
-    <div class="showcase">
-        <div class="menu">
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Введите текст для поиска...">
-                <button class="search-button"><img src="./images/search.svg" alt="search" width="30px"></button>
-            </div>
-            <div class="styles">
-                <div class="tabs">
-                    <button class="tab active" data-category="Y2K">Y2K</button>
-                    <button class="tab" data-category="downtown">downtown</button>
-                    <button class="tab" data-category="goth">goth</button>
-                    <button class="tab" data-category="coquette">coquette</button>
-                    <button class="tab" data-category="goblincore">goblincore</button>
-                </div>
-                <div class="tabs-content">
-                    <div class="style hidden active" id="Y2K">
-                        <a href="#">Longsleeve</a>
-                        <a href="#">Flared jeans</a>
-                        <a href="#">Mini skirts</a>
-                        <a href="#">Sneakers "Converse"</a>
-                        <a href="#">Accessories</a>
-                    </div>
-                    <div class="style hidden" id="downtown">
-                        <a href="#">Sneakers "Vans"</a>
-                        <a href="#">Tennis skirts</a>
-                        <a href="#">Sweatshirts</a>
-                        <a href="#">Skinny jeans</a>
-                        <a href="#">Accessories</a>
-                    </div>
-                    <div class="style hidden" id="goth">
-                        <a href="#">Crop tops</a>
-                        <a href="#">Wide leg Jeans</a>
-                        <a href="#">Skirts</a>
-                        <a href="#">New Rock</a>
-                        <a href="#">Accessories</a>
-                    </div>
-                    <div class="style hidden" id="coquette">
-                        <a href="#">Flared jeans</a>
-                        <a href="#">Loafers</a>
-                        <a href="#">Longsleeve</a>
-                        <a href="#">Mini skirts</a>
-                        <a href="#">Accessories</a>
-                    </div>
-                    <div class="style hidden" id="goblincore">
-                        <a href="#">Mini skirts</a>
-                        <a href="#">Jeans</a>
-                        <a href="#">Sneakers "Converse"</a>
-                        <a href="#">Longsleeve</a>
-                        <a href="#">Accessories</a>
-                    </div>
-                </div>
-            </div>
-            <div class="additionally">
-                <div class="add-wrapper">
-                    <a href="#">Certificates</a>
-                    <a href="#">Sales</a>
-                    <a href="#">Delivery</a>
-                    <a href="#">Return</a>
-                </div>
-            </div>
-        </div>
-    </div> 
-        
         <main>
             <div class="container">
                 <section class="goblincore">
@@ -334,7 +372,7 @@
                 </section>
             </div>
         </main>
-        <footer>
+       <footer>
             <div class="footer-top">
                 <div class="container footer-wrapper">
                     <div class="about">
@@ -348,10 +386,10 @@
                     <div class="information">
                         <h2>Useful information</h2>
                         <ul>
-                            <li><a href="#">Stock</a></li>
-                            <li><a href="#">Gift certificates</a></li>
-                            <li><a href="#">Delivery</a></li>
-                            <li><a href="#">Payment</a></li>
+                            <li class="sale open-popup">Sale</li>
+                            <li class="certificates open-popup">Gift certificates</li>
+                            <li class="delivery open-popup">Delivery</li>
+                            <li class="payment open-popup">Payment</li>
                         </ul>
                     </div>
                     <div class="connection">
@@ -383,7 +421,119 @@
                     </div>
                 </div>
         </footer>
+        <div class="pop-up sale">
+            <div class="pop-up-content">
+                <button class="button-js">x</button>
+                <h1 class="footer-p">Sale</h1>
+                <div class="sale-wrapper-top">
+                    <div class="right">
+                        <div>
+                            <h2>Goblincore</h2>
+                            <p>Если ты сегодня именниник - поздравляю!!! Любая вещь из магазина за полцены твоя!
+                            </p>
+                        </div>
+                        <div>
+                            <h2>Coquette</h2>
+                            <p>Приведи друга и получи скидку 25% на любую вещь из магазина!</p>
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div>
+                            <h2>Downtown</h2>
+                            <p>Получи скидку 30% в честь летеней распродажи!</p>
+                        </div>
+                        <div>
+                            <h2>Ghots</h2>
+                            <p>2+1! Купи две любых вещи из магазина и получи третью вещь со стиля GHOTS в подарок! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sale-wrapper-bottom">
+                    <div>
+                        <h2>Предъяви сертификат ЦТ/ЦЭ 100 баллов и получи любую вещь из магазина на выбор!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up certificates">
+            <div class="pop-up-content">
+                <button class="button-js">x</button>
+                <h1 class="footer-p">Gift Sertificates</h1>
+                <div class="gift-wrapper-top">
+                    <p class="footer-p">Для того, чтобы не ошибиться с выбором, мы предлагаем дарить всем-всем cертификаты
+                        на
+                        покупку от
+                        Вы можете выбрать классический бумажный сертификат номиналом 20, 30, 50 или 100 белорусских рублей,
+                        а
+                        так же наиболее подходящий для вашего подарка дизайн: официальный, яркий "С любовью" или совершенно
+                        особенный, специально для Дня Рождения..</p>
+
+                    <p class="footer-p">Не можете вручить подарок лично? Выбирайте современный способ поздравления -
+                        электронный подарочный
+                        сертификат, приобрести который можно онлайн в пару кликов, указав любой номинал, а мы доставим его
+                        получателю на электронную почту сразу же или в удобное для вас время.</p>
+
+                    <p class="footer-p">И пусть те, кого вы любите, сами выберут для себя стильный джемпер, удобный рюкзак
+                        или
+                        комфортные и качественные джинсы на каждый день в одном из фирменных магазинов StyleStudio в
+                        Беларуси.</p>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up delivery">
+            <div class="pop-up-content">
+                <button class="button-js">x</button>
+                <h1 class="footer-p">Delivery</h1>
+                <p class="delivery-footer-p">Если хотите, вы можете забрать свои покупки самостоятельно в одном из фирменных
+                    магазинов Mark Formelle в
+                    городах Беларуси. Список таких магазинов станет доступен в момент оформления заказа.</p>
+
+                <p class="delivery-footer-p">Процесс доставки до магазина занимает 2-3 дня для Минска и Заславля и 3-5 дней для
+                    других городов.
+
+                <p class="delivery-footer-p">Оплатить заказ вы можете наличными или банковской картой в магазине при получении.</p>
+
+                <p class="delivery-footer-p"> Мы сообщим о поступлении заказа с помощью SMS-сообщения на ваш телефон.</p>
+
+                <p class="delivery-footer-p">Заказ будет храниться в магазине 5 дней.</p>
+                <p></p>
+            </div>
+        </div>
+        <div class="pop-up payment">
+            <div class="pop-up-content">
+                <button class="button-js"></button>
+                <h1 class="footer-p">Payment</h1>
+                <div>
+                    <h2>Наличными денежными средствами или банковской картой</h2>
+                    <p class="footer-p">При доставке товара курьером по г. Минску согласно условиям доставки.</p>
+                </div>
+                <div>
+                    <h2>Оплата через приложение «Оплати»</h2>
+                    <p class="footer-p">Чтобы оплатить заказ с помощью «Оплати», скачайте приложение в App Store, Google
+                        Play или AppGallery и
+                        пополните внутренний электронный кошелек с карточки любых банков без комиссии, через ЕРИП,
+                        банковским
+                        переводом или переводом с другого кошелька «Оплати»</p>
+                    Для проведения платежа в «Оплати» необходимо:
+                    <p>· зайти в приложение и нажать на иконку скана QR-кода (в правом нижем углу), отсканировать QR-код,
+                        после
+                        чего на экране телефона появится чек предварительной оплаты, нажать «Далее» и «Оплатить».</p>
+                    <p>· навести камеру телефона на QR-код, отсканировать его. Перейти по ссылке и подтвердить оплату в
+                        приложении</p>
+                    <h2>Подарочным сертификатом</h2>
+                    <p>Обладатель Подарочного сертификата может использовать его для приобретения любого товара в нашем
+                        интернет-магазине . Если вы решили рассчитаться за покупку с помощью сертификата, сообщите об этом
+                        специалисту call-центра при оформлении заказа или выберите соответствующий способ оплаты при заказе
+                        на сайте через функционал корзины.</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        
         <script src="./app.js"></script>
+        <script src="./account.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleStudio.by</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="dp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Rocker&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="first-header">
+        <div class="container flex">
+            <div>
+                <nav class="flex-nav">
+                    <div>
+                        <button class="a-flex a-text mob-menu">
+                            <img src="./images/menu.svg" alt="menu" width="30px" class="header-img">
+                            Catalog
+                        </button>
+                    </div>
+                    <div>
+                        <a href="#" class="a-flex a-text">
+                            <img src="./images/location.svg" alt="GPS" width="30px" class="header-img">
+                            Stores
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="a-flex a-text">
+                            <img src="./images/gps.svg" alt="navigation" width="30px" class="header-img">
+                            Minsk
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo" width="55px">
+            </div>
+            <div>
+                <nav class="flex-nav">
+                    <a href="/index.html"><img src="./images/user.svg" alt="account" width="35px" class="header-img" id="account"></a>
+                    <a href="#"><img src="./images/favorites.svg" alt="favorites" width="35px" class="header-img" id="favorites"></a>
+                    <a href="#"><img src="./images/bag.svg" alt="bag" width="35px" class="header-img" id="bag"></a>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="showcase">
+        <div class="menu">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Введите текст для поиска...">
+                <button class="search-button"><img src="./images/search.svg" alt="search" width="30px"></button>
+            </div>
+            <div class="styles">
+                <div class="tabs">
+                    <button class="tab active" data-category="Y2K">Y2K</button>
+                    <button class="tab" data-category="downtown">downtown</button>
+                    <button class="tab" data-category="goth">goth</button>
+                    <button class="tab" data-category="coquette">coquette</button>
+                    <button class="tab" data-category="goblincore">goblincore</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="style hidden active" id="Y2K">
+                        <a href="#">Longsleeve</a>
+                        <a href="#">Flared jeans</a>
+                        <a href="#">Mini skirts</a>
+                        <a href="#">Sneakers "Converse"</a>
+                        <a href="#">Accessories</a>
+                    </div>
+                    <div class="style hidden" id="downtown">
+                        <a href="#">Sneakers "Vans"</a>
+                        <a href="#">Tennis skirts</a>
+                        <a href="#">Sweatshirts</a>
+                        <a href="#">Skinny jeans</a>
+                        <a href="#">Accessories</a>
+                    </div>
+                    <div class="style hidden" id="goth">
+                        <a href="#">Crop tops</a>
+                        <a href="#">Wide leg Jeans</a>
+                        <a href="#">Skirts</a>
+                        <a href="#">New Rock</a>
+                        <a href="#">Accessories</a>
+                    </div>
+                    <div class="style hidden" id="coquette">
+                        <a href="#">Flared jeans</a>
+                        <a href="#">Loafers</a>
+                        <a href="#">Longsleeve</a>
+                        <a href="#">Mini skirts</a>
+                        <a href="#">Accessories</a>
+                    </div>
+                    <div class="style hidden" id="goblincore">
+                        <a href="#">Mini skirts</a>
+                        <a href="#">Jeans</a>
+                        <a href="#">Sneakers "Converse"</a>
+                        <a href="#">Longsleeve</a>
+                        <a href="#">Accessories</a>
+                    </div>
+                </div>
+            </div>
+            <div class="additionally">
+                <div class="add-wrapper">
+                    <a href="#">Certificates</a>
+                    <a href="#">Sales</a>
+                    <a href="#">Delivery</a>
+                    <a href="#">Return</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="account-container container">
+            <aside class="account-sidebar">
+                <div class="profile-summary">
+                    <div class="avatar">
+                        <img src="./images/user.svg" alt="Avatar">
+                    </div>
+                    <h2 class="username">Alex Johnson</h2>
+                    <p class="user-email">alex.johnson@example.com</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-value">12</span>
+                            <span class="stat-label">Orders</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">47</span>
+                            <span class="stat-label">Favorites</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">5</span>
+                            <span class="stat-label">Reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="#" class="nav-item active">
+                        <img src="./images/user.svg" alt="Profile">
+                        <span>My Profile</span>
+                    </a>
+                    <a href="#orders" class="nav-item">
+                        <img src="./images/bag.svg" alt="Orders">
+                        <span>My Orders</span>
+                    </a>
+                    <a href="#favorites" class="nav-item">
+                        <img src="./images/favorites.svg" alt="Favorites">
+                        <span>Favorites</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <img src="./images/location.svg" alt="Addresses">
+                        <span>Addresses</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <img src="./images/gps.svg" alt="Settings">
+                        <span>Settings</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <img src="./images/menu.svg" alt="Support">
+                        <span>Support</span>
+                    </a>
+                </nav>
+                <button class="logout-btn">
+                    <img src="./images/menu.svg" alt="Logout">
+                    <span>Log Out</span>
+                </button>
+            </aside>
+            <div class="account-content">
+                <div class="content-header">
+                    <h1>My Profile</h1>
+                    <p>Manage your personal information and preferences</p>
+                </div>
+                <div class="content-sections">
+                    <section class="info-card">
+                        <h2><img src="./images/user.svg" alt="Personal"> Personal Information</h2>
+                        <div class="info-grid">
+                            <div class="info-field">
+                                <label>Full Name</label>
+                                <p>Alex Johnson</p>
+                            </div>
+                            <div class="info-field">
+                                <label>Email</label>
+                                <p>alex.johnson@example.com</p>
+                            </div>
+                            <div class="info-field">
+                                <label>Phone</label>
+                                <p>+375 (29) 123-45-67</p>
+                            </div>
+                            <div class="info-field">
+                                <label>Date of Birth</label>
+                                <p>15 March 1990</p>
+                            </div>
+                        </div>
+                        <button class="edit-btn">Edit Information</button>
+                    </section>
+                    <section class="info-card" id="orders">
+                        <h2><img src="./images/bag.svg" alt="Orders"> Recent Orders</h2>
+                        <div class="orders-list">
+                            <div class="order-item">
+                                <div class="order-details">
+                                    <h3>Order #ST-7842</h3>
+                                    <p>Placed on 28 March 2026</p>
+                                    <span class="order-status status-delivered">Delivered</span>
+                                </div>
+                                <div class="order-total">$124.99</div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-details">
+                                    <h3>Order #ST-7841</h3>
+                                    <p>Placed on 25 March 2026</p>
+                                    <span class="order-status status-processing">Processing</span>
+                                </div>
+                                <div class="order-total">$89.50</div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-details">
+                                    <h3>Order #ST-7839</h3>
+                                    <p>Placed on 20 March 2026</p>
+                                    <span class="order-status status-shipped">Shipped</span>
+                                </div>
+                                <div class="order-total">$210.00</div>
+                            </div>
+                        </div>
+                        <a href="#" class="view-all">View all orders →</a>
+                    </section>
+                    <section class="info-card">
+                        <h2 id="favorites"><img src="./images/favorites.svg" alt="Favorites"> Favorite Items</h2>
+                        <div class="favorites-grid">
+                            <div class="fav-item">
+                                <img src="./images/bagC.jpg" alt="Bag">
+                                <div class="fav-info">
+                                    <h3>Leather Backpack</h3>
+                                    <p>$79.99</p>
+                                </div>
+                            </div>
+                            <div class="fav-item">
+                                <img src="./images/jeansD.jpg" alt="Jeans">
+                                <div class="fav-info">
+                                    <h3>Ripped Jeans</h3>
+                                    <p>$49.99</p>
+                                </div>
+                            </div>
+                            <div class="fav-item">
+                                <img src="./images/sneakersY.jpg" alt="Sneakers">
+                                <div class="fav-info">
+                                    <h3>Yellow Sneakers</h3>
+                                    <p>$64.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="view-all">Browse favorites →</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="window-content">
+        <img src="./images/account.png" alt="">
+    </div>
+    <script src="./account.js"></script>
+</body>
+
+</html>

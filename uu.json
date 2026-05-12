@@ -1,0 +1,152 @@
+[
+    {
+        "name": "Longsleeve",
+        "description": "Soft knit longsleeve in rich dark green. Slim fit, round neckline, perfect for layering or everyday wear.",
+        "price": "46,99 BYN",
+        "pic": "images/longsleeveG.jpg"
+    },
+    {
+        "name": "Jeans",
+        "description": "Classic straight-leg jeans with waist-high fit. Thick cotton with slight elastane, five pockets, versatile model.",
+        "price": "79,99 BYN",
+        "pic": "images/jeansG.jpg"
+    },
+    {
+        "name": "Midi skirt",
+        "description": "Pencil-style midi skirt in thick cotton. High waist, tapered silhouette with discreet back slit.",
+        "price": "79,99 BYN",
+        "pic": "images/skirtG.jpg"
+    },
+    {
+        "name": "'Converse'",
+        "description": "Classic Converse sneakers in deep brown. Textile upper, rubber outsole, versatile everyday color.",
+        "price": "55,99 BYN",
+        "pic": "images/sneakersG.jpg"
+    },
+    {
+        "name": "Bag",
+        "description": "Spacious bag in brown-grey denim. Two-tone design, main zippered compartment, comfortable handles.",
+        "price": "59,99 BYN",
+        "pic": "images/bagG.jpg"
+    },
+    {
+        "name": "Longsleeve",
+        "description": "Crisp white knit longsleeve. Soft cotton blend, round neckline, slightly elongated cut. Perfect basic.",
+        "price": "39.9 BYN",
+        "pic": "images/longsleeveC.jpg"
+    },
+    {
+        "name": "Flared jeans",
+        "description": "High-waisted flared jeans in classic blue denim. Fitted through hips, widens from knee for retro look.",
+        "price": "99.9 BYN",
+        "pic": "images/jeansC.jpg"
+    },
+    {
+        "name": "Mini skirt",
+        "description": "Crisp white mini skirt with playful pink stripes. Figure-hugging fit, soft stretchy fabric.",
+        "price": "59.9 BYN",
+        "pic": "images/skirtC.jpg"
+    },
+    {
+        "name": "Loafers",
+        "description": "Classic black loafers with sleek minimalist design. Smooth leather, low stacked heel, slip-on style.",
+        "price": "89.9 BYN",
+        "pic": "images/loafersC.jpg"
+    },
+    {
+        "name": "Baguette bag",
+        "description": "Soft pink baguette bag with compact curved silhouette. Detachable shoulder strap, iconic branding.",
+        "price": "40.0 BYN",
+        "pic": "images/bagC.jpg"
+    },
+    {
+        "name": "Sweatshirt",
+        "description": "Warm brown sweatshirt with contrasting white stripes. Soft breathable fabric, round neckline.",
+        "price": "39.9 BYN",
+        "pic": "images/sweatshirtD.jpg"
+    },
+    {
+        "name": "Wide leg jeans",
+        "description": "Relaxed-fit baggy jeans in classic blue denim. Loose through hips, wide straight leg, high waist.",
+        "price": "79.9 BYN",
+        "pic": "images/jeansD.jpg"
+    },
+    {
+        "name": "Tennis skirt",
+        "description": "Sporty grey tennis skirt with A-line silhouette. Built-in shorts, elastic waistband, lightweight fabric.",
+        "price": "45.0 BYN",
+        "pic": "images/skirtD.jpg"
+    },
+    {
+        "name": "Sneakers 'Vans'",
+        "description": "Classic black Vans sneakers. Low-top canvas upper, signature waffle outsole, lace-up front.",
+        "price": "49.9 BYN",
+        "pic": "images/sneakersD.jpg"
+    },
+    {
+        "name": "Shopper bag",
+        "description": "Spacious white shopper bag. Minimalist design, durable fabric, reinforced handles.",
+        "price": "19.9 BYN",
+        "pic": "images/bagD.jpg"
+    },
+    {
+        "name": "Crop top",
+        "description": "Edgy black crop top with gothic detailing. High neckline with straps, mesh inserts, stretch fabric.",
+        "price": "20.0 BYN",
+        "pic": "images/topO.jpg"
+    },
+    {
+        "name": "Skinny jeans",
+        "description": "Classic black skinny jeans with second-skin fit. Stretch denim, high waist, five-pocket styling.",
+        "price": "69.9 BYN",
+        "pic": "images/jeansO.jpg"
+    },
+    {
+        "name": "Skirt",
+        "description": "Dark gothic-style black skirt with dramatic detailing. Layered ruffles, corset lacing, flowing silhouette.",
+        "price": "119.9 BYN",
+        "pic": "images/skirtO.jpg"
+    },
+    {
+        "name": "New Rock",
+        "description": "Iconic New Rock platform boots in black. Chunky lug sole, multiple buckles, metallic accents.",
+        "price": "129.9 BYN",
+        "pic": "images/newrockO.jpg"
+    },
+    {
+        "name": "Bag",
+        "description": "Sleek black backpack with harness-style detailing. Multiple straps, durable water-resistant material.",
+        "price": "49.9 BYN",
+        "pic": "images/bagO.jpg"
+    },
+    {
+        "name": "Longsleeve",
+        "description": "Crisp white longsleeve with bold black graphic prints. Soft cotton, round neckline, classic fit.",
+        "price": "50.0 BYN",
+        "pic": "images/longsleeveY.jpg"
+    },
+    {
+        "name": "Flared jeans",
+        "description": "Classic blue flared jeans with high waist. Fitted through hips, widens from knee, five-pocket style.",
+        "price": "89.9 BYN",
+        "pic": "images/jeansY.jpg"
+    },
+    {
+        "name": "Mini skirt",
+        "description": "Classic light blue denim mini skirt. A-line silhouette, five-pocket styling, zip and button closure.",
+        "price": "39.9 BYN",
+        "pic": "images/skirtY.jpg"
+    },
+    {
+        "name": "'Converse'",
+        "description": "Classic low-top white Converse sneakers. Canvas upper, rubber toe cap, lace-up front.",
+        "price": "50.0 BYN",
+        "pic": "images/sneakersY.jpg"
+    },
+    {
+        "name": "Bag",
+        "description": "Bright yellow backpack with spacious main compartment. Adjustable straps, durable lightweight material.",
+        "price": "70.0 BYN",
+        "pic": "images/bagY.jpg"
+    }
+]
