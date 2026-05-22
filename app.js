@@ -1,31 +1,18 @@
 
 
 const tabs = document.querySelectorAll(".tab");
- const style = document.querySelectorAll(".style");
+const style = document.querySelectorAll(".style");
 
-  tabs.forEach(tab => { tab.addEventListener("click", () => { tabs.forEach(t => t.classList.remove("active"));
+tabs.forEach(tab => { tab.addEventListener("click", () => { tabs.forEach(t => t.classList.remove("active"));
 
-     style.forEach(c => c.classList.remove("active")); tab.classList.add("active");
+    style.forEach(c => c.classList.remove("active")); tab.classList.add("active");
      
-     document.getElementById(tab.dataset.category).classList.add("active"); }); })
+    document.getElementById(tab.dataset.category).classList.add("active"); }); })
 const cityBtn = document.getElementById('cityBtn');
 const cityDropdown = document.getElementById('cityDropdown');
 const cityItems = document.querySelectorAll('.city-item');
 const currentCitySpan = document.getElementById('current-city');
 
-// cityBtn.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     cityDropdown.classList.toggle('show');
-// });
-
-// cityItems.forEach(item => {
-//     item.addEventListener('click', () => {
-//         currentCitySpan.innerText = item.textContent;
-//         cityDropdown.classList.remove('show');
-//         openBtn.classList.add(item.textContent);
-        
-//     });
-// });
 
 const menuButtons = document.querySelectorAll('.mob-menu');
 const sideMenu = document.getElementById('sideMenu');
@@ -107,11 +94,10 @@ function changeText(btn) {
     allGps.forEach(el => el.classList.remove('activate'));
     allOverlays.forEach(el => el.classList.remove('activate'));
 
-    // затем включаем нужные
+    
     current.activeGps.classList.toggle('activate');
     current.activeOverlay.classList.toggle('activate');
 
-    // закрываем меню
     menu.classList.remove('active');
 }
 window.addEventListener('click', function (event) {
@@ -175,32 +161,41 @@ fetch('uu.json')
     console.log(names, descriptions, prices)
   });
 
-// Функция сохранения в избранное
 function saveToFavorites(productId) {
     let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
     favorites.push(productId);
     localStorage.setItem('favorites', JSON.stringify(favorites));
     alert('Добавлено в избранное!');
 }
-// Функция удаления из избранного
 function removeFromFavorites(productId) {
     let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
     favorites = favorites.filter(id => id !== productId);
     localStorage.setItem('favorites', JSON.stringify(favorites));
 }
 
-// Функция сохранения в корзину
 function saveToCart(productId) {
     let cart = JSON.parse(localStorage.getItem('cart') || '[]');
     cart.push(productId);
     localStorage.setItem('cart', JSON.stringify(cart));
 }
-// Функция удаления из корзины
 function removeFromCart(productId) {
     let cart = JSON.parse(localStorage.getItem('cart') || '[]');
     cart = cart.filter(id => id !== productId);
     localStorage.setItem('cart', JSON.stringify(cart));
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 karta.forEach((el, index) => {
@@ -295,3 +290,4 @@ favorites.addEventListener('click', function(e) {
 
     });
 });
+

@@ -24,35 +24,135 @@
                 <nav class="flex-nav">
                     <div>
                         <button class="a-flex a-text mob-menu">
-                            <img src="./images/menu.svg" alt="menu" width="30px" class="header-img">
+                            <img src="./images/menu.svg" alt="menu" width="35px" class="header-img">
                             Catalog
                         </button>
                     </div>
                     <div>
-                        <a href="#" class="a-flex a-text">
-                            <img src="./images/location.svg" alt="GPS" width="30px" class="header-img">
+                        <a href="#" class="a-flex a-text popup-btn-minsk activate" id="popup-btn-minsk">
+                            <img src="./images/location.svg" alt="GPS" width="35px" class="header-img">
+                            Stores
+                        </a>
+                        <a href="#" class="a-flex a-text popup-btn-grodno" id="popup-btn-grodno">
+                            <img src="./images/location.svg" alt="GPS" width="35px" class="header-img">
+                            Stores
+                        </a>
+                        <a href="#" class="a-flex a-text popup-btn-brest" id="popup-btn-brest">
+                            <img src="./images/location.svg" alt="GPS" width="35px" class="header-img">
                             Stores
                         </a>
                     </div>
-                    <div>
-                        <a href="#" class="a-flex a-text">
-                            <img src="./images/gps.svg" alt="navigation" width="30px" class="header-img">
-                            Minsk
+                    <div  class="city-wrapper">
+                        <a href="#" class="a-flex a-text city-trigger" >
+                            <img src="./images/gps.svg" alt="navigation" width="35px" class="header-img">
+                         
                         </a>
+                        <button class="mainButton" id="mainButton"> Minsk</button>
+                        <div class="container">              
+                        <div class="menu" id="menu">
+                            <button onclick="changeText(1)">Minsk</button>
+                            <button onclick="changeText(2)">Grodno</button>
+                            <button onclick="changeText(3)">Brest</button>
+                        </div>
+                    </div>
                     </div>
                 </nav>
             </div>
+            <div class="side-menu" id="sideMenu">
+                <div class="side-menu-header">
+                    <button id="closeMenu">X</button>
+                </div>
+                <div class="menu-side">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Введите текст для поиска...">
+                    <button class="search-button"><img src="./images/search.svg" alt="search" width="30px"></button>
+                </div>
+                <div class="styles">
+                    <div class="tabs">
+                        <button class="tab active" data-category="Y2K">Y2K</button>
+                        <button class="tab" data-category="downtown">downtown</button>
+                        <button class="tab" data-category="goth">goth</button>
+                        <button class="tab" data-category="coquette">coquette</button>
+                        <button class="tab" data-category="goblincore">goblincore</button>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="style hidden active" id="Y2K">
+                            <a href="#">Longsleeve</a>
+                            <a href="#">Flared jeans</a>
+                            <a href="#">Mini skirts</a>
+                            <a href="#">Sneakers "Converse"</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                        <div class="style hidden" id="downtown">
+                            <a href="#">Sneakers "Vans"</a>
+                            <a href="#">Tennis skirts</a>
+                            <a href="#">Sweatshirts</a>
+                            <a href="#">Skinny jeans</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                        <div class="style hidden" id="goth">
+                            <a href="#">Crop tops</a>
+                            <a href="#">Wide leg Jeans</a>
+                            <a href="#">Skirts</a>
+                            <a href="#">New Rock</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                        <div class="style hidden" id="coquette">
+                            <a href="#">Flared jeans</a>
+                            <a href="#">Loafers</a>
+                            <a href="#">Longsleeve</a>
+                            <a href="#">Mini skirts</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                        <div class="style hidden" id="goblincore">
+                            <a href="#">Mini skirts</a>
+                            <a href="#">Jeans</a>
+                            <a href="#">Sneakers "Converse"</a>
+                            <a href="#">Longsleeve</a>
+                            <a href="#">Accessories</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="additionally">
+                    <div class="add-wrapper">
+                        <a href="#">Certificates</a>
+                        <a href="#">Sales</a>
+                        <a href="#">Delivery</a>
+                        <a href="#">Return</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="menu-overlay" id="menuOverlay"></div>
             <div class="logo">
                 <img src="./images/logo.png" alt="logo" width="55px">
             </div>
             <div>
                 <nav class="flex-nav">
-                    <a href="/index.html"><img src="./images/user.svg" alt="account" width="35px" class="header-img" id="account"></a>
+                    <a href="../index.html"><img src="./images/user.svg" alt="account" width="35px" class="header-img" id="account"></a>
                     <a href="#"><img src="./images/favorites.svg" alt="favorites" width="35px" class="header-img" id="favorites"></a>
                     <a href="#"><img src="./images/bag.svg" alt="bag" width="35px" class="header-img" id="bag"></a>
                 </nav>
             </div>
         </div>
+        </div>
+         <div class="popup-minsk">
+            <button class="popup-close">X</button>
+            <div class="map-css">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0055e8c04bc4ecc9b5935e07cc0a6142a6bb7f4f23e2db019b8cbc42ad215d4a&amp;width=799&amp;height=508&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+        <div class="popup-grodno">
+            <button class="popup-close">X</button>
+            <div class="map-css">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adf06f3ea70d705cb603c6c6f3cd5420aaeb3c9b97b1117fc2ca84d11ec209cc0&amp;width=913&amp;height=545&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+        <div class="popup-brest">
+            <button class="popup-close">X</button>
+            <div class="map-css">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aebba4820aceb1de2bde1d402c08b262fc94c5a58395ad8e2962ee5ffdaf0e1cd&amp;width=824&amp;height=575&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
         </div>
     </header>
 
@@ -169,10 +269,12 @@
                         <span>Support</span>
                     </a>
                 </nav>
-                <button class="logout-btn">
-                    <img src="./images/menu.svg" alt="Logout">
-                    <span>Log Out</span>
-                </button>
+                <a href="/index.html">
+                    <button class="logout-btn">
+                        <img src="./images/menu.svg" alt="Logout">
+                        <span>Log Out</span>
+                    </button>
+                </a>
             </aside>
             <div class="account-content">
                 <div class="content-header">
@@ -267,6 +369,7 @@
         <img src="./images/account.png" alt="">
     </div>
     <script src="./account.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
