@@ -543,201 +543,6 @@ button {
 
    
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: "New Rocker", system-ui;
-    font-weight: 400;
-}
-
-footer h2 {
-    margin-bottom: 15px;
-}
-
-footer {
-    padding-top: 91px;
-    padding-bottom: 65px;
-}
-
-footer .container {
-    max-width: 95%;
-    margin: auto;
-}
-
-footer .footer-top {
-    padding-bottom: 30px;
-}
-
-footer .footer-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-footer .about {
-    width: 40%;
-}
-
-footer .about p {
-    color: black;
-
-}
-
-footer .connection {
-    width: 20%;
-}
-
-footer .information {
-    width: 25%;
-}
-
-footer .footer-bottom {
-    background-color: black;
-    padding-top: 55px;
-    padding-bottom: 55px;
-}
-
-footer .footer-bottom .footer-wrapper {
-    align-items: center;
-}
-
-footer .description p {
-    color: #fff;
-
-}
-
-footer ul {
-    list-style-type: none;
-
-}
-
-footer ul li {
-    margin-top: 7px;
-}
-
-footer ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-footer .description {
-    width: 50%;
-
-}
-
-footer .cards img {
-    max-height: 30px;
-    max-width: 100%;
-}
-
-footer .cards {
-    display: flex;
-    gap: 25px;
-
-}
-
-.pop-up {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: #000000ad;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.pop-up.visible {
-    display: flex;
-}
-
-.pop-up-content {
-    background: white;
-    width: 50%;
-    height: 70vh;
-    position: relative;
-    padding: 20px;
-}
-
-.footer-p {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.delivey-footer-p {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.sale-wrapper-top {
-    display: flex;
-    justify-content: space-between;
-    height: 60%;
-}
-
-.sale-wrapper-bottom {
-    border: 2px black solid;
-    padding: 20px;
-}
-
-.right div,
-.left div {
-    border: 2px black solid;
-    padding: 20px;
-    width: 370px;
-    margin-bottom: 20px;
-}
-
-
-
-
-.button-js {
-    width: 30px;
-    height: 40px;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    text-decoration: none;
-    padding: 5px 10px;
-    background-image: url(./images/crossed-bones.jpg);
-    background-size: 120%;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-}
-
-@media(max-width: 700px) {
-    footer .description {
-        width: 100%;
-    }
-
-    footer .about {
-        width: 100%;
-    }
-
-    footer .connection {
-        width: 49%;
-    }
-
-    footer .information {
-        width: 49%;
-    }
-
-    footer .cards {
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .pop-up-content {
-        width: 85%;
-        height: 85vh;
-    }
-
-}
-
 
 
 
@@ -904,7 +709,7 @@ footer .cards {
     font-size: 40px;
 }
 }
-@media (max-width: 425px) {
+@media (max-width: 650px) {
 .js-okno-cloth {
     flex-direction: column;
 }
@@ -999,6 +804,7 @@ footer .footer-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
 }
 
 
@@ -1168,4 +974,5 @@ footer .cards {
     .right, .left {width: 100%;}
 
 }
+
 
